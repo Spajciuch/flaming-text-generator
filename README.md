@@ -3,11 +3,18 @@ It's an Node.js module for generating flaming text with http://www.flamingtext.c
 
 ## Usage
 ```ts
-import * as flameText from '../index';
+import * as flameText from 'flaming-text-generator';
 
 flameText.generate({ text: 'Hello World', transparent: true })
   .then((data) => {
+    console.log(data)
 })
+```
+
+### Example Output
+
+```
+{"id":"27509307472497202","src":"https://ov12-engine.flamingtext.com/netfu/tmp28009/coollogo_com-104785047.gif","width":304,"height":86,"farmer":"ov6","gimpHost":"ov12-engine.flamingtext.com","gimpPort":28009,"gimpTime":911}
 ```
 ## Parameters
 ```js
