@@ -1,0 +1,50 @@
+{
+  "name": "flaming-text-generator",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+ },
+  "author": "spyte",
+  "license": "ISC",
+  "description": "Node.js module for generating flaming text with http://www.flamingtext.com",
+  "dependencies": {
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/request": "^2.48.7",
+    "jest": "^27.4.5",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.2",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.5.4"
+  },
+  "types": "./dist\\index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spajciuch/flaming-text-generator.git"
+  },
+  "keywords": [
+    "node.js",
+    "\"flaming",
+    "text\"",
+    "request"
+  ],
+  "bugs": {
+    "url": "https://github.com/Spajciuch/flaming-text-generator/issues"
+  },
+  "homepage": "https://github.com/Spajciuch/flaming-text-generator#readme",
+  "files": [
+    "dist/**/*"
+  ]
+}
