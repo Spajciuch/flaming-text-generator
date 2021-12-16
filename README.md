@@ -40,3 +40,5 @@ flameText.generate({ text: 'Hello World', transparent: true })
   animLoop?: boolean;
   defaultFrameRate?: number;
 ```
+### Original module
+I improved [this module](https://www.npmjs.com/package/node-flaming-text) from [gchao](https://www.npmjs.com/~gchao). And made it in Typescript so it's more affordable for user.
