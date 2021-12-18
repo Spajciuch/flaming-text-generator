@@ -46,7 +46,7 @@ export function generate(options: flamingParameters) {
         if (err) {
           reject(err);
         } else {
-          resolve(body);
+          resolve(JSON.parse(body));
         }
       },
     );
